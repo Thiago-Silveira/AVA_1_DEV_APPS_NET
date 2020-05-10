@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Core Aplication</title>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
 </head>
 <body>
-<h1>Core Aplication</h1>
+<h1>Index</h1>
+{% for product in produtos%}
+<p> {{product.name}}</p>
+{%endfor%}
 <h2>{{avaliação}}</h2>
 </body>
 </html>
